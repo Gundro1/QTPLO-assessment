@@ -262,6 +262,13 @@ test.describe('Checkout Tests - Negative Scenarios', () => {
         await page.locator('[data-test="cancel"]').click();
         await expect(page).toHaveURL(/.*inventory.html/);
     });
+});
+
+test.describe('Miscellaneous & Edge Case Tests', () => {
+
+    test.beforeEach(async ({ page }) => {
+        await loginAsStandardUser(page);
+    });
 
     test('TC-MISC-005: Reset App State clears cart', async ({ page }) => {
         // Add product
@@ -272,18 +279,25 @@ test.describe('Checkout Tests - Negative Scenarios', () => {
         await page.locator('#react-burger-menu-btn').click();
         await page.locator('#reset_sidebar_link').click();
 
+        // SauceDemo requires a refresh to visually update the cart badge after a reset
+        await page.reload();
+
         // Verify cart is empty
         await expect(page.locator('.shopping_cart_badge')).not.toBeVisible();
         await expect(page.locator('[data-test="add-to-cart-sauce-labs-backpack"]')).toBeVisible();
     });
 
     test('TC-CHK-009: Behavior check - Checkout with empty cart', async ({ page }) => {
-        // Navigate directly to cart without adding items
+        // Ensure cart is empty first
+        await page.locator('#react-burger-menu-btn').click();
+        await page.locator('#reset_sidebar_link').click();
+        await page.reload();
+
         await page.locator('.shopping_cart_link').click();
         await page.locator('[data-test="checkout"]').click();
 
-        // The app currently allows empty checkout (could be considered a bug)
-        // We document the current behavior
+        // Documenting that SauceDemo allows empty checkout
         await expect(page).toHaveURL(/.*checkout-step-one.html/);
     });
 });
+

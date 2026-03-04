@@ -58,14 +58,14 @@ npx playwright show-report
 | Checkout | 10 |
 | Miscellaneous | 8 |
 
-### Automation Tests (25 total)
+### Automation Tests (27 total)
 | Category | Count |
 |----------|-------|
 | Login (valid + invalid) | 9 |
 | Add to Cart | 4 |
 | Remove from Cart | 4 |
 | Checkout (valid) | 2 |
-| Checkout (negative) | 6 |
+| Checkout (negative/edge) | 8 |
 
 ### API Tests (20 total)
 | Category | Count |
@@ -83,3 +83,11 @@ npx playwright show-report
 - **Target Applications:**
   - SauceDemo: https://www.saucedemo.com/
   - Toolshop API: https://api.practicesoftwaretesting.com/
+
+## Submission Instructions
+1. Create a public repository on GitHub called `qa-assessment`.
+2. Follow the push instructions in the `walkthrough.md` or README.
+3. Use these links for your submission form:
+   - **Manual:** `https://github.com/YOUR_USERNAME/qa-assessment/blob/main/manual-test-cases.md`
+   - **Automation:** `https://github.com/YOUR_USERNAME/qa-assessment/tree/main/tests`
+   - **API:** `https://github.com/YOUR_USERNAME/qa-assessment/blob/main/tests/api.spec.js`
