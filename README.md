@@ -89,5 +89,6 @@ npx playwright show-report
 2. Follow the push instructions in the `walkthrough.md` or README.
 3. Use these links for your submission form:
    - **Manual:** `https://github.com/YOUR_USERNAME/qa-assessment/blob/main/manual-test-cases.md`
+   - **Bug Report (Negative Finds):** `https://github.com/YOUR_USERNAME/qa-assessment/blob/main/bug-report.md`
    - **Automation:** `https://github.com/YOUR_USERNAME/qa-assessment/tree/main/tests`
    - **API:** `https://github.com/YOUR_USERNAME/qa-assessment/blob/main/tests/api.spec.js`
