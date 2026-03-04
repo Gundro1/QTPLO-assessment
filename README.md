@@ -84,5 +84,3 @@ npx playwright show-report
   - SauceDemo: https://www.saucedemo.com/
   - Toolshop API: https://api.practicesoftwaretesting.com/
 
-   - **Automation:** `https://github.com/YOUR_USERNAME/QTPLO-assessment/tree/main/tests`
-   - **API:** `https://github.com/YOUR_USERNAME/QTPLO-assessment/blob/main/tests/api.spec.js`
