@@ -1,6 +1,6 @@
 # SauceDemo Manual Test Cases
 **Application URL:** https://www.saucedemo.com/  
-**Tester:** QA Engineer  
+**Tester:** Ogundero Azeez  
 **Status Key:** ✅ PASS | ❌ FAIL | ⏳ PENDING
 
 ## 1. LOGIN FEATURE
