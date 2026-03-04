@@ -84,11 +84,5 @@ npx playwright show-report
   - SauceDemo: https://www.saucedemo.com/
   - Toolshop API: https://api.practicesoftwaretesting.com/
 
-## Submission Instructions
-1. Create a public repository on GitHub called `QTPLO-assessment`.
-2. Follow the push instructions in the `walkthrough.md` or README.
-3. Use these links for your submission form:
-   - **Manual:** `https://github.com/YOUR_USERNAME/QTPLO-assessment/blob/main/manual-test-cases.md`
-   - **Bug Report (Negative Finds):** `https://github.com/YOUR_USERNAME/QTPLO-assessment/blob/main/bug-report.md`
    - **Automation:** `https://github.com/YOUR_USERNAME/QTPLO-assessment/tree/main/tests`
    - **API:** `https://github.com/YOUR_USERNAME/QTPLO-assessment/blob/main/tests/api.spec.js`
