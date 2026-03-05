@@ -54,6 +54,9 @@
 | **TC-CHK-009** | Back Home After Order | Medium | 1. Finish order<br>2. Click "Back Home" | Redirected to inventory. Cart empty. | ✅ PASS |
 | **TC-CHK-010** | Bulk Checkout | High | 1. Checkout with 6 items | Total price matches sum of all items. | ✅ PASS |
 | **TC-CHK-011** | Invalid Data Validation| Medium | 1. Enter random symbols/long text in FName/LName/Zip<br>2. Click Continue | (BUG) Should show error "Invalid format". Currently accepts anything. | ❌ FAIL |
+| **TC-CHK-012** | Missing Billing Info | High | 1. Proceed to checkout | (BUG) No option to enter billing address or card details. | ❌ FAIL |
+| **TC-CHK-013** | Missing Delivery Info | High | 1. Proceed to checkout | (BUG) No option to specify delivery address. | ❌ FAIL |
+| **TC-CHK-014** | Redundant Info Entry | Medium | 1. Fill info<br>2. Go back from overview<br>3. Proceed again | (BUG) System asks for the same information again instead of persisting it. | ❌ FAIL |
 
 ## 5. ADDITIONAL / EDGE CASES
 

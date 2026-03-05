@@ -16,10 +16,14 @@ This document highlights critical findings and logical flaws identified during t
 - **Severity:** High (Business Logic Flaw)
 - **Status in Automation:** Verified as current (buggy) behavior in `TC-CHK-009`.
 
-### [BUG-UI-003] No Data Validation on Checkout Fields
-- **Description:** The First Name, Last Name, and Postal Code fields accept any characters (symbols, random strings, extremely long text) and allow the user to proceed to the Overview page.
-- **Severity:** Medium (Lack of Input Sanitization)
-- **Status in Automation:** Verified as current behavior in `TC-CHK-010`.
+### [BUG-UI-003] Critical Checkout Flow Defects
+- **Description:** Multiple critical issues identified in the checkout process:
+  1. **Missing Payment/Shipping Info:** No fields for billing address, credit card, or delivery details.
+  2. **Data Validation:** Names and Zip codes accept symbols, numbers, and random strings.
+  3. **State Persistence:** Returning to the info page after hitting "Continue" forces the user to re-enter all details.
+- **Severity:** High (Broken Business Logic / UI UX)
+- **Status in Manual:** Verified in `TC-CHK-011`, `TC-CHK-012`, `TC-CHK-013`, `TC-CHK-014`.
+- **Status in Automation:** Partial coverage in `TC-CHK-010`.
 
 ---
 

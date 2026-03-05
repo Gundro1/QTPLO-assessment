@@ -300,7 +300,7 @@ test.describe('Miscellaneous & Edge Case Tests', () => {
         await expect(page).toHaveURL(/.*checkout-step-one.html/);
     });
 
-    test('TC-CHK-010: Behavior check - Invalid data in checkout fields', async ({ page }) => {
+    test('TC-CHK-010: Behavior check - Invalid data in checkout fields (EXPECTED FAIL)', async ({ page }) => {
         // Add product and go to checkout
         await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
         await page.locator('.shopping_cart_link').click();
@@ -312,7 +312,7 @@ test.describe('Miscellaneous & Edge Case Tests', () => {
         await page.locator('[data-test="postalCode"]').fill('ABCDEFG-VERY-LONG-STRING');
         await page.locator('[data-test="continue"]').click();
 
-        // Documenting that SauceDemo accepts invalid data and proceeds to overview
+        // BUG: SauceDemo accepts invalid data and proceeds to overview instead of showing error
         await expect(page).toHaveURL(/.*checkout-step-two.html/);
         await expect(page.locator('.cart_item')).toBeVisible();
     });

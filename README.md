@@ -3,7 +3,7 @@
 ## Project Structure
 ```
 QTPLO-assessment/
-├── manual-test-cases.md          # Manual test cases document (34 test cases)
+├── manual-test-cases.md          # Manual test cases document (37 test cases)
 ├── package.json                  # Node.js project config
 ├── playwright.config.js          # Playwright configuration
 ├── README.md                     # This file
@@ -49,13 +49,13 @@ npx playwright show-report
 
 ## Test Coverage Summary
 
-### Manual Test Cases (34 total)
+### Manual Test Cases (37 total)
 | Category | Count |
 |----------|-------|
 | Login | 10 |
 | Add to Cart | 6 |
 | Remove from Cart | 5 |
-| Checkout | 11 |
+| Checkout | 14 |
 | Miscellaneous | 8 |
 
 ### Automation Tests (28 total)
