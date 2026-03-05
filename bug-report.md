@@ -16,6 +16,11 @@ This document highlights critical findings and logical flaws identified during t
 - **Severity:** High (Business Logic Flaw)
 - **Status in Automation:** Verified as current (buggy) behavior in `TC-CHK-009`.
 
+### [BUG-UI-003] No Data Validation on Checkout Fields
+- **Description:** The First Name, Last Name, and Postal Code fields accept any characters (symbols, random strings, extremely long text) and allow the user to proceed to the Overview page.
+- **Severity:** Medium (Lack of Input Sanitization)
+- **Status in Automation:** Verified as current behavior in `TC-CHK-010`.
+
 ---
 
 ## 🛑 PART B: Toolshop API (Backend Bugs)

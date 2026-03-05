@@ -299,5 +299,22 @@ test.describe('Miscellaneous & Edge Case Tests', () => {
         // Documenting that SauceDemo allows empty checkout
         await expect(page).toHaveURL(/.*checkout-step-one.html/);
     });
+
+    test('TC-CHK-010: Behavior check - Invalid data in checkout fields', async ({ page }) => {
+        // Add product and go to checkout
+        await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+        await page.locator('.shopping_cart_link').click();
+        await page.locator('[data-test="checkout"]').click();
+
+        // Fill with random/invalid data
+        await page.locator('[data-test="firstName"]').fill('!@#$$%^&*()');
+        await page.locator('[data-test="lastName"]').fill('1234567890');
+        await page.locator('[data-test="postalCode"]').fill('ABCDEFG-VERY-LONG-STRING');
+        await page.locator('[data-test="continue"]').click();
+
+        // Documenting that SauceDemo accepts invalid data and proceeds to overview
+        await expect(page).toHaveURL(/.*checkout-step-two.html/);
+        await expect(page.locator('.cart_item')).toBeVisible();
+    });
 });
 

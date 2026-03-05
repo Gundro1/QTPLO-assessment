@@ -53,6 +53,7 @@
 | **TC-CHK-008** | Cancel from Info Page | Medium | 1. On Info page, click Cancel | Redirected to Cart. Items remain. | ✅ PASS |
 | **TC-CHK-009** | Back Home After Order | Medium | 1. Finish order<br>2. Click "Back Home" | Redirected to inventory. Cart empty. | ✅ PASS |
 | **TC-CHK-010** | Bulk Checkout | High | 1. Checkout with 6 items | Total price matches sum of all items. | ✅ PASS |
+| **TC-CHK-011** | Invalid Data Validation| Medium | 1. Enter random symbols/long text in FName/LName/Zip<br>2. Click Continue | (BUG) Should show error "Invalid format". Currently accepts anything. | ❌ FAIL |
 
 ## 5. ADDITIONAL / EDGE CASES
 

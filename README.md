@@ -3,13 +3,13 @@
 ## Project Structure
 ```
 QTPLO-assessment/
-├── manual-test-cases.md          # Manual test cases document (33 test cases)
+├── manual-test-cases.md          # Manual test cases document (34 test cases)
 ├── package.json                  # Node.js project config
 ├── playwright.config.js          # Playwright configuration
 ├── README.md                     # This file
 └── tests/
     ├── login.spec.js             # Login automation tests (9 tests)
-    ├── cart-and-checkout.spec.js  # Cart & Checkout automation tests (16 tests)
+    ├── cart-and-checkout.spec.js  # Cart & Checkout automation tests (17 tests)
     └── api.spec.js               # API automation tests (20 tests)
 ```
 
@@ -49,23 +49,23 @@ npx playwright show-report
 
 ## Test Coverage Summary
 
-### Manual Test Cases (33 total)
+### Manual Test Cases (34 total)
 | Category | Count |
 |----------|-------|
 | Login | 10 |
 | Add to Cart | 6 |
 | Remove from Cart | 5 |
-| Checkout | 10 |
+| Checkout | 11 |
 | Miscellaneous | 8 |
 
-### Automation Tests (27 total)
+### Automation Tests (28 total)
 | Category | Count |
 |----------|-------|
 | Login (valid + invalid) | 9 |
 | Add to Cart | 4 |
 | Remove from Cart | 4 |
 | Checkout (valid) | 2 |
-| Checkout (negative/edge) | 8 |
+| Checkout (negative/edge) | 9 |
 
 ### API Tests (20 total)
 | Category | Count |
