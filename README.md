@@ -1,4 +1,4 @@
-# QTPLO - assesement - Automation & API Tests
+# QTPLO  - Automation & API Tests
 
 ## Project Structure
 ```
